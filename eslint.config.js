@@ -7,7 +7,7 @@ export default defineConfig([
   ...actions.default,
   {
     rules: {
-      'github-actions/ci-versions': 'off',
+      'github-actions/ci-versions': 'off', // TODO
     },
   },
   {
