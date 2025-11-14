@@ -5,13 +5,13 @@
   "keywords": [
     "i18n"
   ],
-  "license": "MIT",
-  "author": "Lvce Editor",
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lvce-editor/i18n.git"
   },
+  "license": "MIT",
+  "author": "Lvce Editor",
+  "type": "module",
   "main": "src/index.ts",
   "types": "src/index.d.ts",
   "scripts": {
