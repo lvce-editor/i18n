@@ -1,7 +1,8 @@
 import * as config from '@lvce-editor/eslint-config'
 import * as actions from '@lvce-editor/eslint-plugin-github-actions'
+import { defineConfig } from 'eslint/config'
 
-export default [
+export default defineConfig([
   ...config.default,
   ...actions.default,
   {
@@ -9,4 +10,7 @@ export default [
       'github-actions/ci-versions': 'off',
     },
   },
-]
+  {
+    ignores: ['src/index.d.ts'],
+  },
+])
