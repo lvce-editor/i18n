@@ -9,8 +9,9 @@ export const i18nString = (
   if (placeholders === emptyObject) {
     return key
   }
-  const replacer = (match: any, rest: string): string => {
-    return placeholders[rest]
+  let result = key
+  for (const [placeholder, replacement] of Object.entries(placeholders)) {
+    result = result.split(`{${placeholder}}`).join(String(replacement))
   }
-  return key.replaceAll(RE_PLACEHOLDER, replacer)
+  return result
 }
